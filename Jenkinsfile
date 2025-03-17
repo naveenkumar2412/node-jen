@@ -5,7 +5,7 @@ pipeline {
         // Set environment variables
         DEPLOY_SERVER = 'ubuntu@15.206.205.249' // Replace with EC2 username and IP address
         DEPLOY_DIR = '/home/ubuntu/node-jen/app.js' // Path to your app on EC2
-        NODE_VERSION = '14' // Node.js version to use
+        NODE_VERSION = '18' // Node.js version to use
     }
 
     stages {
