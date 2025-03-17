@@ -17,8 +17,7 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                echo 'Skipping installation, Node.js already installed on the system.'
-                
+                echo 'Skipping installation, Node.js already installed on the system.'   
             }
         }
 
