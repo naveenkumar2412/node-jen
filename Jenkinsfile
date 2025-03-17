@@ -17,14 +17,8 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                script {
-                    // Install Node.js and npm dependencies
-                    sh '''
-                    echo "your_password" | sudo -S curl -sL https://deb.nodesource.com/setup_18.x | sudo -S bash -
-                    sudo -S apt-get install -y nodejs
-                    npm install
-                    '''
-                }
+                echo 'Skipping installation, Node.js already installed on the system.'
+                
             }
         }
 
