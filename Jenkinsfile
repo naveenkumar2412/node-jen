@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/naveenkumar2412/node-jen.git' // Replace with your Git repository
+                git branch: 'main', url: 'https://github.com/naveenkumar2412/node-jen.git' // Replace with your Git repository
             }
         }
 
